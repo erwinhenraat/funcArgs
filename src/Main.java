@@ -1,20 +1,24 @@
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Demo over functions en arguments");
+        /*
+        String naam = "Brian";
+        System.out.println("hallo mijn naam is " + naam +  " hoe gaat het ermee?");
+        naam = "Erwin";
+        System.out.println("hallo mijn naam is " + naam +  " hoe gaat het ermee?");
+*/
+        int amount =0;
+        amount += sayHello("Erwin");
+        amount += sayHello("Fred");
+        amount += sayHello("Fred Flintstone");
 
-        function1("Erwin");
-        System.out.println(function1("Henkie"));
-
+        System.out.println("we hebben nu "+ amount + " letters");
     }
-    public static int function1(String naam){
+    public static int sayHello(String naam){
+        //String naam = "Fred";
+        System.out.println("hallo mijn naam is " + naam +  " hoe gaat het ermee?");
 
-        String line = "Dit is een function geschreven door ";
-        line += naam;
-        System.out.println(line);
+        return naam.length();
 
-        System.out.println("deze function geeft het aantal characters als resultaat");
-
-        return line.length();
     }
 }
