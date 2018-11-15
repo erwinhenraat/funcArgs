@@ -1,24 +1,21 @@
 public class Main {
-
     public static void main(String[] args) {
+
+        String[] names = {"Erwin", "Kees", "Fred", "Henk", "Richard"};
+
+        for(String name : names) {
+            System.out.println(printIets(name));
+        }
+
         /*
-        String naam = "Brian";
-        System.out.println("hallo mijn naam is " + naam +  " hoe gaat het ermee?");
-        naam = "Erwin";
-        System.out.println("hallo mijn naam is " + naam +  " hoe gaat het ermee?");
-*/
-        int amount =0;
-        amount += sayHello("Erwin");
-        amount += sayHello("Fred");
-        amount += sayHello("Fred Flintstone");
-
-        System.out.println("we hebben nu "+ amount + " letters");
+        for (int i=0;i<12;i++){
+            printIets("Henk");
+        }*/
     }
-    public static int sayHello(String naam){
-        //String naam = "Fred";
-        System.out.println("hallo mijn naam is " + naam +  " hoe gaat het ermee?");
+    private static int printIets(String name){
+        System.out.println("Hallo ik ben "+name+" en ik ben cool");
 
-        return naam.length();
-
+        return name.length();
     }
+
 }
